@@ -1,0 +1,9 @@
+# Dependencies without versions
+opencv-python
+pandas
+tqdm
+matplotlib
+scikit-image
+pylint
+# Dependencies with versions
+tensorflow==1.15
