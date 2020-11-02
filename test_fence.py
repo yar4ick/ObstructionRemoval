@@ -555,7 +555,7 @@ with tf.Graph().as_default():
         feed_dict={fused_frame0: I0, fused_frame1: I1, fused_frame2: I2, fused_frame3: I3, fused_frame4: I4})
 
 
-    cv2.imwrite(out_path + FLAGS.test_dataset_name[-5:] + 'final_B2.png', np.clip(np.round(
+    cv2.imwrite(out_path + FLAGS.test_dataset_name[-5:] + '_final.png', np.clip(np.round(
         cv2.resize(final_B2_np[0, :, :, ::-1], (ORIGINAL_W, ORIGINAL_H), interpolation=cv2.INTER_CUBIC) * 255.0), 0.0,
                                                                                   255.0).astype(np.uint8))
     cv2.imwrite(out_path + FLAGS.test_dataset_name[-5:] + 'A2.png', np.clip(
