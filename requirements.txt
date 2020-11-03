@@ -1,5 +1,4 @@
 # Dependencies without versions
-opencv-python
 pandas
 tqdm
 matplotlib
@@ -7,4 +6,5 @@ scikit-image
 pylint
 pillow
 # Dependencies with versions
+opencv-python==4.2.0.34
 tensorflow==1.15
