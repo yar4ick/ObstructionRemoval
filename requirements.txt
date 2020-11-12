@@ -8,3 +8,4 @@ pillow
 # Dependencies with versions
 opencv-python==4.2.0.34
 tensorflow==1.15
+pytelegrambotapi==3.7.2
