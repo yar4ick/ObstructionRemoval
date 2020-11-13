@@ -7,7 +7,9 @@ RUN apt-get update && apt-get -y install libgl1-mesa-glx libglib2.0-0 libsm6 lib
 #Copy list of python requirements
 COPY requirements.txt .
 #Install python dependencies
-RUN pip install --upgrade pip
+#RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 #Copy main code
 COPY . .
+#Run bot
+ENTRYPOINT [ "python", "bot.py" ]
